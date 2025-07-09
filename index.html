@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <style>
+        body{
+            height: 100vh;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+        input[type="button"]{
+            width: 100px;
+            background-color: aqua;
+            height: 80px;
+            text-align: center;
+            font-size: 40px;  
+            border-radius: 20px; 
+            /* color: blue; */
+        }
+        #cls{
+            background-color: red;
+            font-size: 40px;
+        }
+        #br{
+            border-radius: 20px;
+            background-color: black;
+        }
+       
+       
+    </style>
+
+</head>
+<body>
+    <div class="calcon">
+    <table  id="br">
+        <tr>
+            <td colspan="3"><input type="text" name="" id="inputt" style="width: 300px;" height="300px"></td>
+            <td><input type="button" value="C" id="cls"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="9" onclick="Val(9)"></td>
+            <td><input type="button" value="8" onclick="Val(8)"></td>
+            <td><input type="button" value="7" onclick="Val(7)"></td>
+            <td><input type="button" value="+" onclick="Val('+')"></td>
+
+        </tr>
+        <tr>
+            <td><input type="button" value="6" onclick="Val(6)"></td>
+            <td><input type="button" value="5" onclick="Val(5)"></td>
+            <td><input type="button" value="4" onclick="Val(4)"></td>
+            <td><input type="button" value="-" onclick="Val('-')"></td>
+
+        </tr>
+        <tr>
+            <td><input type="button" value="3" onclick="Val(3)"></td>
+            <td><input type="button" value="2" onclick="Val(2)"></td>
+            <td><input type="button" value="1" onclick="Val(1)"></td>
+            <td><input type="button" value="*" onclick="Val('*')"></td>
+
+        </tr>
+        <tr>
+            <td><input type="button" value="0" onclick="Val(0)"></td>
+            <td><input type="button" value="/" onclick="Val('/')"></td>
+            <td><input type="button" value="%" onclick="Val('%')"></td>
+            <td><input type="button" value="=" onclick="Result()"></td>
+
+        </tr>
+    </table>
+</div>
+<script src="action.js"></script>    
+</body>
+</html>
